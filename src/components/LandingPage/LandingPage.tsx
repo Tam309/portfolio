@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./LandingPage.module.css";
 
@@ -6,7 +5,7 @@ const LandingPage = () => {
   return (
     <div className="vh-100 d-flex align-items-center justify-content-center bg-black text-white">
       <Container fluid className="px-0">
-        <Row className="gx-3 w-100 align-items-center"> 
+        <Row className="gx-3 w-100 align-items-center">
           <Col
             xs={12}
             md={6}
@@ -15,8 +14,15 @@ const LandingPage = () => {
             <h1 className="display-4">Hello, I'm Tam Doan</h1>
             <h2 className="h5 text-warning">Full-Stack Engineer</h2>
             <p className="lead">Welcome to my personal website</p>
+            <a
+              href="/Tam_Doan_CV.pdf"
+              download="Tam_Doan_CV.pdf"
+              className={styles.downloadBtn}
+            >
+              <i className="bi bi-download"></i> Download CV
+            </a>
           </Col>
-          
+
           <Col
             xs={12}
             md={6}
