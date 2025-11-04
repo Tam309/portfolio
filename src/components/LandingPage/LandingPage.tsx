@@ -13,8 +13,8 @@ const LandingPage = () => {
             <p className={styles.lead}>Welcome to my personal website</p>
 
             <a
-              href="/Tam_Doan_CV.pdf"
-              download="Tam_Doan_CV.pdf"
+              href="/Tam Doan CV.pdf"
+              download="Tam Doan CV.pdf"
               className={styles.downloadBtn}
             >
               <i className="bi bi-download" /> Download CV
