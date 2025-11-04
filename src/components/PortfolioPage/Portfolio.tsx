@@ -20,7 +20,7 @@ const projects: Project[] = [
       "A web application that allows users to discover and share fishing spots, complete with reviews, photos, and location details.",
     imageAlt: "Fishing Spot Share preview",
     imageUrl: "https://res.cloudinary.com/dwnsglhao/image/upload/v1760425895/Screenshot_2025-10-14_at_10.10.19_bofdcn.png",
-    liveUrl: "#",
+    liveUrl: "http://fishing-spot-bucket.s3-website.eu-north-1.amazonaws.com/",
     detailsUrl: "https://github.com/Tam309/Fishing-Spot-Share",
   },
   {
