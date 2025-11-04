@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import styles from "./AboutPage.module.css";
 

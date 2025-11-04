@@ -1,51 +1,114 @@
+/* ========== THEME ========== */
+:root {
+  --gold: #ffc107;
+  --bg: #000;
+  --text: #fff;
+  --muted: #d8d8d8;
+  --ring: rgba(252, 202, 0, 0.5);
+}
+
+/* ========== LAYOUT ========== */
+.wrapper {
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  display: grid;
+  place-items: center;
+  padding-inline: 16px;            /* cozy side padding on mobile */
+}
+
+.hero {
+  width: 100%;
+  max-width: 1100px;               /* readable width on desktop */
+}
+
+/* ========== TYPOGRAPHY ========== */
+.title {
+  /* scales: min 28px, fluid, max 44px */
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  line-height: 1.2;
+  margin-bottom: 6px;
+  text-align: center;              /* centered on mobile */
+}
+
+.role {
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.lead {
+  color: var(--muted);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* ========== IMAGE ========== */
+.imageWrap {
+  display: grid;
+  place-items: center;
+}
+
 .image {
-  width: 350px;
-  height: 350px;
-  border: 2px solid rgba(255, 255, 0, 0.6); 
+  width: clamp(180px, 55vw, 340px);  /* fluid size */
+  aspect-ratio: 1 / 1;
+  border: 2px solid rgba(255, 255, 0, 0.6);
   border-radius: 50%;
-  box-shadow: 0 -2px 200px rgba(252, 202, 0, 0.5); 
-  transition: box-shadow 1.3s ease;
   object-fit: cover;
+  box-shadow: 0 -2px 200px var(--ring);
+  transition: box-shadow 1.3s ease, transform 0.25s ease;
 }
 
 .image:hover {
-  box-shadow: 0 0 20px rgba(252, 202, 0, 0.5), 
-              0 0 40px rgba(252, 202, 0, 0.5), 
-              0 0 60px rgba(252, 202, 0, 0.5), 
-              0 -2px 200px rgba(252, 202, 0, 0.5);
+  box-shadow:
+    0 0 20px var(--ring),
+    0 0 40px var(--ring),
+    0 0 60px var(--ring),
+    0 -2px 200px var(--ring);
+  transform: translateY(-2px);
 }
 
-.textCol{
-  padding-left: 20rem;
+/* ========== BUTTON ========== */
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;                     /* full width on mobile */
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: rgba(255, 193, 7, 0.15);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
-.imageCol{
-  padding-right: 20rem;
+.downloadBtn:hover {
+  background: var(--gold);
+  color: #000;
+  transform: translateY(-2px);
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .image {
-    width: 300px;
-    height: 300px;
+.downloadBtn i {
+  font-size: 1rem;
+}
+
+/* ========== DESKTOP TWEAKS (≥ md) ========== */
+@media (min-width: 768px) {
+  .title,
+  .role,
+  .lead {
+    text-align: left;              /* align left on desktop */
   }
-  .textCol {
-    padding-left: 10rem; 
-  }
-  .imageCol {
-    padding-right: 10rem; 
+  .downloadBtn {
+    width: auto;                   /* natural width on desktop */
   }
 }
 
-
-@media (max-width: 768px) {
-  .image {
-    width: 250px;
-    height: 250px;
-  }
-  .textCol {
-    padding-left: 7rem;
-  }
-  .imageCol {
-    padding-right: 0;
-  }
+/* Optional spacing utilities for the row on mobile */
+.stackGap {
+  row-gap: 24px;
 }

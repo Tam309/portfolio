@@ -119,9 +119,27 @@
       }
     
       .line {
-        margin-left: 0;
-        margin-top: 10px;
-        width: 50%;
+        display: none;
       }
 
+      .lineSkill {
+        display: none;
+      }
+
+      .tabButton {
+        margin-left: 0;
+        margin-top: 1rem;
+      }
+      .tabButtonTool {
+        margin-left: 15px;
+        margin-top: 1rem;
+      }
+
+      .skillsContainer {
+        width: 100%;
+        padding: 10px;
+      }
+      .skillCard {
+        margin: 0.5rem 0;
+      }
   }

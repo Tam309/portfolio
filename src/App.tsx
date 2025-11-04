@@ -5,7 +5,6 @@ import NavigationBar from './components/Navbar/Navbar';
 import LandingPage from './components/LandingPage/LandingPage';
 import AboutPage  from './components/AboutPage/AboutPage';
 import PortfolioPage from './components/PortfolioPage/Portfolio';
-import Experience from './components/ExperiencePage/Experience';
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/experience" element={<Experience />} />
       </Routes>
     </Router>
   )
