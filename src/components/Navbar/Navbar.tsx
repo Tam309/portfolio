@@ -44,6 +44,14 @@ const NavigationBar = () => {
             >
               Portfolio
             </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/experience"
+              className={`${style.navLink} ${activeLink === 'Experience' ? style.active : ''}`}
+              onClick={() => handleLinkClick('Experience')}
+            >
+              Experience
+            </Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link
