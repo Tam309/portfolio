@@ -13,11 +13,12 @@ const LandingPage = () => {
             <p className={styles.lead}>Welcome to my personal website</p>
 
             <a
-              href="/Tam Doan CV.pdf"
-              download="Tam Doan CV.pdf"
+              href="https://drive.google.com/file/d/1tMwRK8womuKo2NDWU8kRGiNe4nyDjggE/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.downloadBtn}
             >
-              <i className="bi bi-download" /> Download CV
+              <i className="bi bi-download" />View CV
             </a>
           </Col>
 

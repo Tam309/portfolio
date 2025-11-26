@@ -3,7 +3,7 @@ import { Container, Col, Row, Button } from "react-bootstrap";
 import styles from "./AboutPage.module.css";
 
 const AboutPage = () => {
-  const [activeTab, setActiveTab] = useState("About Me");
+  const [activeTab, setActiveTab] = useState("techStack");
   return (
     <Container fluid className={`vh-100 bg-black text-white`}>
       <Container className={`p-4 ${styles.container}`}>
