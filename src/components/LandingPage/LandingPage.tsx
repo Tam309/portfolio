@@ -13,12 +13,13 @@ const LandingPage = () => {
             <p className={styles.lead}>Welcome to my personal website</p>
 
             <a
-              href="https://drive.google.com/file/d/1tMwRK8womuKo2NDWU8kRGiNe4nyDjggE/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VjWJ73jh2_If1na8mdUCZ5JXMjuxoCoJ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.downloadBtn}
             >
-              <i className="bi bi-download" />View CV
+              <i className="bi bi-download" />
+              View CV
             </a>
           </Col>
 

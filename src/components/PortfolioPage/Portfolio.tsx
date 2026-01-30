@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "./Portfolio.module.css";
 
-
 type Project = {
   id: string;
   title: string;
@@ -20,7 +19,8 @@ const projects: Project[] = [
     blurb:
       "A web application that allows users to discover and share fishing spots, complete with reviews, photos, and location details.",
     imageAlt: "Fishing Spot Share preview",
-    imageUrl: "https://res.cloudinary.com/dwnsglhao/image/upload/v1763381653/Screenshot_2025-11-17_at_14.12.31_gnnkgn.png",
+    imageUrl:
+      "https://res.cloudinary.com/dwnsglhao/image/upload/v1763381653/Screenshot_2025-11-17_at_14.12.31_gnnkgn.png",
     liveUrl: "http://fishing-spot-bucket.s3-website.eu-north-1.amazonaws.com/",
     detailsUrl: "https://github.com/Tam309/Fishing-Spot-Share",
     liveDemo: true,
@@ -49,8 +49,19 @@ const projects: Project[] = [
     detailsUrl: "https://github.com/Mobile-Development-Project-Group-18/Client",
     liveDemo: false,
   },
+  {
+    id: "EcomSphere",
+    title: "EcomSphere",
+    blurb:
+      "An e-commerce web application for seamless online shopping and mock payment.",
+    imageAlt: "Echo preview",
+    imageUrl:
+      "https://res.cloudinary.com/dwnsglhao/image/upload/v1769761690/Screenshot_2026-01-30_151945_pnk40r.png",
+    liveUrl: "#",
+    detailsUrl: "https://github.com/E-Commerce-webapp/Client",
+    liveDemo: false,
+  },
 ];
-
 
 const tabs = ["Projects"] as const;
 type Tab = (typeof tabs)[number];
@@ -120,11 +131,11 @@ export default function PortfolioShowcase() {
                     <div className="mt-auto d-flex gap-2">
                       {p.liveDemo && (
                         <a
-                        className={`btn btn-sm ${styles.primaryBtn}`}
-                        href={p.liveUrl || "#"}
-                      >
-                        Live Demo <span className={styles.linkIcon}>↗</span>
-                      </a>
+                          className={`btn btn-sm ${styles.primaryBtn}`}
+                          href={p.liveUrl || "#"}
+                        >
+                          Live Demo <span className={styles.linkIcon}>↗</span>
+                        </a>
                       )}
                       <a
                         className={`btn btn-sm ${styles.secondaryBtn}`}
@@ -139,7 +150,6 @@ export default function PortfolioShowcase() {
             ))}
           </div>
         )}
-        
       </div>
     </div>
   );
