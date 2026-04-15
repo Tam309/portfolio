@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import { FaGithub } from "react-icons/fa";
-import style from "./Navbar.module.css";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import { FaGithub } from 'react-icons/fa';
+import style from './Navbar.module.css';
 
 const NavigationBar = () => {
-  const [activeLink, setActiveLink] = useState("Home");
+  const [activeLink, setActiveLink] = useState('Home');
 
   const handleLinkClick = (link: string) => {
     setActiveLink(link);
@@ -23,43 +23,34 @@ const NavigationBar = () => {
             <Nav.Link
               as={Link}
               to="/"
-              className={`${style.navLink} ${activeLink === "Home" ? style.active : ""}`}
-              onClick={() => handleLinkClick("Home")}
+              className={`${style.navLink} ${activeLink === 'Home' ? style.active : ''}`}
+              onClick={() => handleLinkClick('Home')}
             >
               Home
             </Nav.Link>
             <Nav.Link
               as={Link}
               to="/about"
-              className={`${style.navLink} ${activeLink === "About" ? style.active : ""}`}
-              onClick={() => handleLinkClick("About")}
+              className={`${style.navLink} ${activeLink === 'About' ? style.active : ''}`}
+              onClick={() => handleLinkClick('About')}
             >
               About
             </Nav.Link>
             <Nav.Link
               as={Link}
               to="/portfolio"
-              className={`${style.navLink} ${activeLink === "Portfolio" ? style.active : ""}`}
-              onClick={() => handleLinkClick("Portfolio")}
+              className={`${style.navLink} ${activeLink === 'Portfolio' ? style.active : ''}`}
+              onClick={() => handleLinkClick('Portfolio')}
             >
               Portfolio
             </Nav.Link>
             <Nav.Link
               as={Link}
               to="/experience"
-              className={`${style.navLink} ${activeLink === "Experience" ? style.active : ""}`}
-              onClick={() => handleLinkClick("Experience")}
+              className={`${style.navLink} ${activeLink === 'Experience' ? style.active : ''}`}
+              onClick={() => handleLinkClick('Experience')}
             >
               Experience
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/phishing-test"
-              className={`${style.navLink} ${activeLink === "GetRichQuick" ? style.active : ""}`}
-              onClick={() => handleLinkClick("GetRichQuick")}
-              style={{ color: "#ff4444", fontWeight: 700 }}
-            >
-              Get Rich Quick
             </Nav.Link>
           </Nav>
           <Nav>
@@ -68,7 +59,7 @@ const NavigationBar = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={style.navLink}
-              style={{ color: "white" }}
+              style={{ color: 'white' }}
             >
               <FaGithub size={30} />
             </Nav.Link>
