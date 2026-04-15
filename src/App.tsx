@@ -6,16 +6,18 @@ import LandingPage from './components/LandingPage/LandingPage';
 import AboutPage  from './components/AboutPage/AboutPage';
 import PortfolioPage from './components/PortfolioPage/Portfolio';
 import ExperiencePage from './components/Experience/ExperiencePage';
+import PhishingTest from './components/PhishingTest/PhishingTest';
 
 function App() {
   return (
     <Router>
-      <NavigationBar /> 
+      <NavigationBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/phishing-test" element={<PhishingTest />} />
       </Routes>
     </Router>
   )
