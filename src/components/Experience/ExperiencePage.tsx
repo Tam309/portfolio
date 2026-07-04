@@ -7,7 +7,7 @@ const experiences = [
     company: "Near Real",
     type: "Internship",
     location: "Oulu, Finland",
-    date: "7th January 2026 - Present",
+    date: "7th January 2026 - 7th May 2026",
     link: "https://www.near-real.com/",
     logo: "https://www.near-real.com/logo.03615c4c.png",
     responsibilities: [
